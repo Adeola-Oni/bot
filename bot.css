@@ -1,0 +1,135 @@
+body{
+    font-family: verdana;
+    margin: 0px;
+    background-image: url(bts.jpg);
+    background-repeat: 1;
+    background-size: cover;
+}
+
+header{
+    color:white;
+    background-color: rgb(27, 26, 26);
+    opacity: 0.95;
+    text-align: right;
+    padding: 0.2%;
+    font-size: 80%;
+}
+header h2{
+    text-align: left;
+}
+
+.king{
+    color: aqua;
+    font-size: 250%;
+    text-align: center;
+    font-family: cursive;
+}
+
+section{
+    text-align: center;
+    background-color: rgb(27, 26, 26);
+    opacity: 0.95;
+    color: white;
+    font-size: 100%;
+    padding: 0.2%;
+}
+
+div{
+    background-color: rgb(17, 16, 16);
+    color: aqua;
+    opacity: 0.8;
+    text-align: center;
+    margin: 5%;
+    padding: 2%;
+    font-size: 100%;
+    font-family: cursive;
+    
+}
+
+input{
+    text-align: center;
+    width: 45%;
+    height: 2.5em;
+    border: 2px solid black;
+    margin: 3%;
+    padding: 2%;
+}
+
+
+select{
+    text-align: center;
+    width: 45%;
+    height: 2.5em;
+    border: none;
+}
+
+#success{
+    display: none;
+}
+#error{
+    display: none;
+}
+#second{
+    display: none;
+}
+#third{
+    display: none;
+}
+#fourth{
+    display: none;
+}
+#fifth{
+    display: none;
+}
+#sixth{
+    display: none;
+}
+#seventh{
+    display: none;
+}
+#eighth{
+    display: none;
+}
+#nineth{
+    display: none;
+}
+#tenth{
+    display: none;
+    font-size: 100%;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+[class*="col-"]{
+	width: 100%;
+	float: left;
+	padding: 15px;
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+    background-color: teal;
+}
+
+
+@media only screen and (min-width: 768px) {
+    /* For larger devices */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+}
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kilua The Health Chatbot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="bot.css" />
+    <script src="bot.js"></script>
+</head>
+<body>
+    <header class="row">
+        <p class="col-12 king">KING ADEOLA EDUCATIONAL SCHOLARSHIP CONSULT</p>     
+    </header>
+
+    <section class="row">
+        <p>Please fill your answers correctly, to qualify for Lolita Scholarship 2018.</p>
+    </section>
+
+
+    <div id="first" onmouseleave="next2()">
+        <p>HELLO, WHAT IS YOUR NAME?</p>
+        <input type="text" id="name" required="required" placeholder="Name">
+    </div>
+
+    <div id="second" onmouseleave="agevalidation()">
+        <p id="newname"></p>
+        <input type="text" id="age" required="required" placeholder="Age" >
+    </div>
+
+    <div id="third" onmouseleave="next4()">
+        <p id="ageresponse"></p>
+        <input type="text" id="name">
+    </div>
+
+    <div id="fourth">
+        <p>GENDER </p>
+        <select onchange="next5()" id="gender">
+            <option>GENDER</option>
+            <option>MALE</option>
+            <option>FEMALE</option>
+        </select>
+        <br>
+    </div>
+
+    <div id="fifth" onmouseleave="next6()">
+        <p>WHAT IS YOUR CUMULATIVE GRADE POINT (CGPA) ?</p>
+        <input type="text" id="cgpa" required="required" placeholder="CGPA">
+    </div>
+
+    <div id="sixth" >
+        <p>WHAT IS THE NAME OF YOUR UNIVERSITY?</p>
+        <select onchange="next7()" id="uni">
+            <option >UNIVERSITY</option>
+            <option >UNIVERSITY OF LAGOS</option>
+            <option >UNIVERSITY OF ILORIN</option>
+            <option >UNIVERSITY OF ABUJA</option>
+            <option >OBAFEMI AWOLOWO UNIVERSITY</option>
+            <option >UNIVERSITY OF IBADAN</option>
+            <option >UNIVERSITY OF NIGERIA, NSSUKA</option>
+            <option >OTHERS</option>
+        </select>
+        <br>
+    </div>
+
+    <div id="seventh">
+        <p>WHAT IS THE NAME OF YOUR FACULTY? </p>
+        <select onchange="next8()" id="faculty">
+            <option>FACULTY</option>
+            <option>SCIENCE</option>
+            <option>ROBOTICS</option>
+            <option>ENGINEERING</option>
+            <option>ELECTRONICS</option>
+            <option >ARTIFICIAL INTELLIGENCE</option>
+        </select>
+    </div>
+
+    <div id="eighth">
+        <p>WHAT IS THE NAME OF YOUR DEPARTMENT? </p>
+        <select onchange="next9()" id="dept">
+            <option >DEPARTMENT</option>
+            <option >COMPUTER SCIENCES</option>
+            <option>COMPUTER ENGINEERING</option>
+            <option>ELECTRICAL ENGINEERING</option>
+            <option>SYSTEMS ENGINEERING</option>
+            <option>PHYSICS</option>
+            <option>MATHEMATICS</option>
+            <option >OTHERS</option>
+        </select>
+    </div>
+
+    <div id="nineth" onmouseleave="next10()">
+        <p>WHAT IS YOUR EMAIL ADDRESS? </p>
+        <input type="email" id="mail" required="required" placeholder=" Email-Address">
+    </div>
+
+    <div id="tenth">
+        <p id="peaceout"></p>
+        <button onclick="success()">SUBMIT RESPONSE</button>
+    </div>
+
+    <div id="error">
+        <p id="errorp" ></p>
+        <button><a href="chatbot.html">RETRY</a></button>
+    </div>
+
+    <div id="success">
+        <p id="successp"></p>
+    </div>
+
+
+
+
+    
+</body>
+</html>
